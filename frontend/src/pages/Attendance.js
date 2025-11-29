@@ -176,7 +176,7 @@ const Attendance = () => {
                     {attendance ? (
                       <div className="text-right">
                         <div className="flex items-center gap-2 text-green-600">
-                          <CheckCircle size={18} />
+                          <CheckCircle2 size={18} />
                           <span className="body-font font-semibold uppercase text-sm">Present</span>
                         </div>
                         <p className="body-font text-xs text-zinc-600 mono-font mt-1">
