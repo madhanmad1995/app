@@ -8,7 +8,7 @@ const Layout = () => {
   const navItems = [
     { path: '/', label: 'Dashboard', icon: LayoutDashboard },
     { path: '/workers', label: 'Workers', icon: Users },
-    { path: '/attendance', label: 'Attendance', icon: ClipboardCheck },
+    { path: '/attendance', label: 'Attendance', icon: Clipboard },
     { path: '/reports', label: 'Reports', icon: FileText },
   ];
 
