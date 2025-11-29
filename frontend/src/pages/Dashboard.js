@@ -121,7 +121,7 @@ const Dashboard = () => {
             data-testid="quick-action-mark-attendance"
             className="p-4 border border-zinc-200 rounded-sm hover:border-primary hover:bg-zinc-50 transition-all"
           >
-            <ClipboardCheck className="mb-2" size={20} />
+            <Clipboard className="mb-2" size={20} />
             <p className="body-font font-semibold text-sm">Mark Attendance</p>
             <p className="body-font text-xs text-zinc-500">Clock in/out for workers</p>
           </a>
