@@ -1,0 +1,152 @@
+{
+  "identity": {
+    "persona": "E1: The Anti-AI Designer",
+    "mission": "Create a raw, industrial, and hyper-functional attendance system that feels like a physical tool, not a generic SaaS.",
+    "archetype": "Swiss & High-Contrast (Authority, Clarity)",
+    "vibe": "The 'Control Room' - Dense, Sharp, Utilitarian."
+  },
+  "project_context": {
+    "name": "WageFlow",
+    "app_type": "Industrial Dashboard",
+    "target_audience": "Factory Managers, Construction Supervisors",
+    "emotional_tone": "Reliable, Precise, Heavy-Duty"
+  },
+  "typography": {
+    "strategy": "The 'Swiss Brutalist' - Radical weight contrast.",
+    "fonts": {
+      "heading": {
+        "family": "Chivo",
+        "weights": ["900", "700", "300"],
+        "usage": "Page titles, Big metrics, Hero text. Use Black (900) for impact.",
+        "fallback": "sans-serif"
+      },
+      "body": {
+        "family": "IBM Plex Sans",
+        "weights": ["400", "500", "600"],
+        "usage": "General UI, labels, paragraphs. Technical and legible.",
+        "fallback": "sans-serif"
+      },
+      "mono": {
+        "family": "JetBrains Mono",
+        "weights": ["400", "700"],
+        "usage": "Wages, Hours, IDs, Tabular Data. CRITICAL for financial trust.",
+        "fallback": "monospace"
+      }
+    },
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap"
+  },
+  "colors": {
+    "palette_name": "Industrial Safety",
+    "description": "Stark concrete greys punctuated by aggressive Safety Orange for action.",
+    "theme_mode": "Light (Default) / Dark (Control Room Mode)",
+    "tokens": {
+      "primary": {
+        "hex": "#FF5F1F",
+        "tailwind": "bg-orange-600",
+        "usage": "Primary Actions, 'Clock In' buttons, Active States."
+      },
+      "secondary": {
+        "hex": "#27272A",
+        "tailwind": "bg-zinc-800",
+        "usage": "Secondary buttons, Dark mode surfaces."
+      },
+      "background": {
+        "light": "#F4F4F5",
+        "dark": "#09090B",
+        "usage": "App background. Note: Not pure white."
+      },
+      "surface": {
+        "light": "#FFFFFF",
+        "dark": "#18181B",
+        "usage": "Cards, Panels, Tables."
+      },
+      "border": {
+        "light": "#E4E4E7",
+        "dark": "#27272A",
+        "usage": "Hard 1px borders. No soft shadows."
+      },
+      "text": {
+        "primary": "#18181B",
+        "secondary": "#71717A",
+        "mono": "#000000"
+      },
+      "status": {
+        "success": "#10B981",
+        "warning": "#F59E0B",
+        "error": "#EF4444"
+      }
+    },
+    "forbidden_colors": ["#1B93A4", "#7351B7", "Generic Blue Gradients"]
+  },
+  "layout_strategy": {
+    "grid_system": "The 'Control Room' Grid",
+    "spacing": "Generous but dense within data containers.",
+    "container_padding": "p-6 md:p-8 lg:p-12",
+    "gap": "gap-4 md:gap-6",
+    "modes": {
+      "dashboard": {
+        "type": "Bento Grid",
+        "columns": "grid-cols-1 md:grid-cols-4 lg:grid-cols-12",
+        "rules": [
+          "Summary Cards: col-span-2 or col-span-3",
+          "Main Chart: col-span-full md:col-span-8 row-span-2",
+          "Recent Activity: col-span-full md:col-span-4 row-span-2"
+        ]
+      },
+      "worker_list": {
+        "type": "Dense Table",
+        "rules": [
+          "Sticky Header",
+          "Mono font for all numerical data",
+          "Zebra striping allowed for readability"
+        ]
+      }
+    }
+  },
+  "components": {
+    "radius": "rounded-sm (2px) or rounded-none",
+    "shadows": "shadow-none or shadow-sm (hard)",
+    "buttons": {
+      "style": "Sharp edges, uppercase text, tracking-wide.",
+      "primary": "bg-primary text-white hover:bg-primary/90 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:translate-y-[1px] active:shadow-none transition-all",
+      "secondary": "border border-input bg-background hover:bg-accent hover:text-accent-foreground"
+    },
+    "cards": {
+      "style": "Border-only, no shadow, white background.",
+      "classes": "border border-zinc-200 bg-white rounded-sm p-6"
+    },
+    "inputs": {
+      "style": "Heavy bottom border or full box with sharp edges.",
+      "classes": "rounded-none border-zinc-300 focus:ring-0 focus:border-primary bg-zinc-50"
+    },
+    "custom_modifications": [
+      "Override Shadcn 'radius' variable to 0.2rem in CSS.",
+      "Use 'sonner' for toasts, styled as industrial tickets."
+    ]
+  },
+  "visual_assets": {
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px or 2px. Sharp joins if possible.",
+      "installation": "yarn add lucide-react"
+    },
+    "textures": {
+      "login_background": "https://images.unsplash.com/photo-1557304093-c0ddaccfc5c6?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "dashboard_overlay": "https://images.unsplash.com/photo-1536179247184-595913ca4a28?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "usage": "Use login_background with a heavy dark overlay (bg-black/80) for the login screen. Use dashboard_overlay with opacity-5 mix-blend-multiply on the dashboard background."
+    }
+  },
+  "universal_guidelines": [
+    "DO NOT use 'Inter' for headings. Use 'Chivo'.",
+    "DO NOT use rounded corners > 4px. This is an industrial tool.",
+    "DO NOT use gradients. Use solid, high-contrast colors.",
+    "ALWAYS use 'JetBrains Mono' for wages, hours, and currency.",
+    "ALWAYS add 'data-testid' to interactive elements.",
+    "Use 2-3x more spacing than typical designs.",
+    "Dark colors look good when used independently without gradients.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Every interaction needs micro-animations - hover states, transitions.",
+    "NEVER use AI assistant Emoji characters."
+  ],
+  "instructions_to_main_agent": "1. Install fonts immediately in index.css. 2. Update tailwind.config.js with the 'Industrial Safety' palette. 3. Set global border radius to 2px. 4. Build the Dashboard using the 'Control Room' grid strategy. 5. Use the provided image URLs for the login page."
+}
