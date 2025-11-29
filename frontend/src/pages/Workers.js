@@ -121,12 +121,15 @@ const Workers = () => {
                 Add Worker
               </Button>
             </DialogTrigger>
-            <DialogContent className="rounded-sm">
+            <DialogContent className="rounded-sm" aria-describedby="worker-dialog-description">
               <DialogHeader>
                 <DialogTitle className="heading-font text-2xl font-bold uppercase">
                   {editingWorker ? 'Edit Worker' : 'Add New Worker'}
                 </DialogTitle>
               </DialogHeader>
+              <p id="worker-dialog-description" className="sr-only">
+                {editingWorker ? 'Edit worker information including name, ID, and daily wage rate' : 'Add a new worker by providing name, worker ID, and daily wage rate'}
+              </p>
               <form onSubmit={handleSubmit} className="space-y-4 mt-4">
                 <div>
                   <Label htmlFor="name" className="body-font text-sm font-medium uppercase tracking-wide">
