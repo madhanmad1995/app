@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelfieeBox Event Management - Create Unforgettable Moments</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-50">
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-gradient-to-r from-purple-600 to-pink-500 overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <video autoplay muted loop class="w-full h-full object-cover">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-happy-people-taking-selfies-at-a-party-31874-large.mp4" type="video/mp4">
+            </video>
+</div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 animate-fadeIn">Capture Your Special Moments</h1>
+            <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">Professional event management with photo booths that create unforgettable experiences</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#services" class="bg-white text-purple-600 hover:bg-purple-100 px-8 py-4 rounded-full font-medium text-lg transition duration-300">Our Services</a>
+                <a href="#contact" class="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-8 py-4 rounded-full font-medium text-lg transition duration-300">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">About SelfieBox Eventz</h2>
+                    <p class="text-gray-600 mb-6 text-lg">Based in Coimbatore, we specialize in creating magical experiences for all your events. From weddings to corporate gatherings, our photo booths and event management services add that extra sparkle to your special occasions.</p>
+                    <p class="text-gray-600 mb-8 text-lg">With years of experience in the industry, we understand what makes an event truly memorable. Our team of professionals works tirelessly to ensure every detail is perfect.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex items-center gap-3 mb-4 sm:mb-0">
+                            <div class="bg-purple-100 p-3 rounded-full">
+                                <i data-feather="check-circle" class="text-purple-600"></i>
+                            </div>
+                            <span class="font-medium">Professional Team</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-purple-100 p-3 rounded-full">
+                                <i data-feather="award" class="text-purple-600"></i>
+                            </div>
+                            <span class="font-medium">Premium Quality</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="relative h-64 rounded-xl overflow-hidden shadow-lg">
+                        <img src="https://i.ibb.co/QvZKw01n/1000680622.jpg" alt="Wedding photo booth" class="w-full h-full object-cover">
+</div>
+                        <div class="relative h-64 rounded-xl overflow-hidden shadow-lg mt-8">
+                        <img src="https://i.ibb.co/jkBpHRf4/1644727548218-01.jpg" alt="Event photo booth setup" class="w-full h-full object-cover">
+</div>
+                        <div class="relative h-64 rounded-xl overflow-hidden shadow-lg">
+                        <img src="https://i.ibb.co/7xWdQxHB/FB-IMG-1626169906577.jpg" alt="People enjoying photo booth" class="w-full h-full object-cover">
+</div>
+                        <div class="relative h-64 rounded-xl overflow-hidden shadow-lg mt-8">
+                        <img src="https://i.ibb.co/Qv5tY9HZ/IMG-20220401-WA0005.jpg" alt="Corporate event photo booth" class="w-full h-full object-cover">
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">We offer comprehensive event solutions tailored to your needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                <div class="bg-purple-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                    <i data-feather="camera" class="text-purple-600 text-2xl"></i>
+                </div>
+<h3 class="text-2xl font-bold text-gray-800 mb-4">Photo Booths</h3>
+                    <p class="text-gray-600 mb-4">Interactive photo experiences with props, backdrops, and instant prints for your guests to enjoy.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-gray-600">
+                            <i data-feather="check" class="text-purple-600 w-4"></i>
+                            <span>Custom branding</span>
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-600">
+                            <i data-feather="check" class="text-purple-600 w-4"></i>
+                            <span>Instant sharing</span>
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-600">
+                            <i data-feather="check" class="text-purple-600 w-4"></i>
+                            <span>Props & backdrops</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <div class="bg-purple-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i data-feather="calendar" class="text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Event Planning</h3>
+                    <p class="text-gray-600 mb-4">Full-service event coordination from concept to execution for weddings, corporate events, and more.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-gray-600">
+                            <i data-feather="check" class="text-purple-600 w-4"></i>
+                            <span>Venue selection</span>
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-600">
+                            <i data-feather="check" class="text-purple-600 w-4"></i>
+                            <span>Vendor coordination</span>
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-600">
+                            <i data-feather="check" class="text-purple-600 w-4"></i>
+                            <span>Day-of coordination</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <div class="bg-purple-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i data-feather="music" class="text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Entertainment</h3>
+                    <p class="text-gray-600 mb-4">Complete entertainment solutions including DJs, live music, and interactive experiences.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-gray-600">
+                            <i data-feather="check" class="text-purple-600 w-4"></i>
+                            <span>Professional DJs</span>
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-600">
+                            <i data-feather="check" class="text-purple-600 w-4"></i>
+                            <span>Live performers</span>
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-600">
+                            <i data-feather="check" class="text-purple-600 w-4"></i>
+                            <span>Interactive games</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Work</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Capturing smiles and creating memories</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                        <img src="https://i.ibb.co/dw3pJMT1/IMG-20241215-WA0007.jpg" alt="Wedding photo booth" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-xl font-medium">Wedding Celebration</span>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                        <img src="https://i.ibb.co/HfsCGPtv/IMG-20210123-WA0012.jpg" alt="Corporate event with photo booth" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-xl font-medium">Corporate Gathering</span>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                        <img src="https://i.ibb.co/fdRh0Z2Z/IMG-20200519-WA0007.jpg" alt="Birthday party photo booth" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-xl font-medium">Birthday Party</span>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                        <img src="https://i.ibb.co/05RkL33/IMG-20180722-WA0016.jpg" alt="Photo booth props and setup" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-xl font-medium">Photo Booth Fun</span>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                    <img src="https://i.ibb.co/RpkMHq10/dda2e7efdcbb4254b3829a21834ae341.jpg" alt="Outdoor event photo booth" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-xl font-medium">Outdoor Celebration</span>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                    <img src="https://i.ibb.co/9mv2hKv5/decorated-wedding-hall-with-candles-round-tables-centerpieces.jpg" alt="Corporate team with photo booth" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-xl font-medium">Team Building</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                    <a href="https://www.instagram.com/selfieebox_eventz?igsh=ZjdteW1xZm55ZDAx" target="_blank" class="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-full font-medium text-lg transition duration-300">
+<i data-feather="instagram"></i>
+                    See More on Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">What Our Clients Say</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Hear from those who've experienced our magic</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"The SelfieBox team made our wedding unforgettable! The photo booth was a huge hit with our guests, and the quality of the prints was exceptional."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="http://static.photos/people/200x200/11" alt="Happy couple" class="w-12 h-12 rounded-full object-cover">
+<div>
+                            <h4 class="font-bold text-gray-800">Siva & Monisha</h4>
+                            <p class="text-gray-500 text-sm">Wedding Clients</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Our company anniversary was a great success thanks to SelfieBox. Their event coordination was flawless and the photo booth kept everyone entertained all night."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="http://static.photos/people/200x200/12" alt="Business executive" class="w-12 h-12 rounded-full object-cover">
+<div>
+                            <h4 class="font-bold text-gray-800">Arjun</h4>
+                            <p class="text-gray-500 text-sm">Corporate Client</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"My daughter's birthday party was magical with SelfieBox! The kids loved the props and we have beautiful memories captured forever. Highly recommended!"</p>
+                    <div class="flex items-center gap-4">
+                        <img src="http://static.photos/people/200x200/13" alt="Mother with child" class="w-12 h-12 rounded-full object-cover">
+<div>
+                            <h4 class="font-bold text-gray-800">Venkat</h4>
+                            <p class="text-gray-500 text-sm">Birthday Party</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-purple-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">Ready to Create Magic?</h2>
+                    <p class="text-xl opacity-90 max-w-2xl mx-auto">Get in touch to discuss your event needs</p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-purple-700 p-3 rounded-full">
+                                    <i data-feather="map-pin" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Address</h4>
+                                    <p>K.vadamadurai, Thudiyalur<br>Coimbatore: 641017</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="bg-purple-700 p-3 rounded-full">
+                                    <i data-feather="mail" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <a href="mailto:selfieboxeventz@gmail.com" class="hover:underline">selfieboxeventz@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="bg-purple-700 p-3 rounded-full">
+                                    <i data-feather="instagram" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Instagram</h4>
+                                <a href="https://www.instagram.com/selfieebox_eventz?igsh=ZjdteW1xZm55ZDAx" target="_blank" class="hover:underline">@selfieebox_eventz</a>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block mb-2 font-medium">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-purple-700 border border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-300 placeholder-purple-300 text-white">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block mb-2 font-medium">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-purple-700 border border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-300 placeholder-purple-300 text-white">
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block mb-2 font-medium">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg bg-purple-700 border border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-300 placeholder-purple-300 text-white">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block mb-2 font-medium">Your Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-purple-700 border border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-300 placeholder-purple-300 text-white"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-white text-purple-600 hover:bg-gray-100 px-6 py-4 rounded-lg font-medium text-lg transition duration-300">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
